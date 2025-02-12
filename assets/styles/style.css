@@ -19,7 +19,9 @@
   margin: 0;
 }
 nav {
-  width: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -159,3 +161,74 @@ span svg {
   top: 0.5rem;
   right: 0.5rem;
 }
+
+.works {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.works * {
+  background-color: transparent;
+}
+
+.works .box-container:nth-child(3) {
+  margin-inline-start: 10rem;
+}
+
+.my-works {
+  margin: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  height: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-works p {
+  color: var(--navLink);
+}
+
+.box-container {
+  padding: 10px;
+  margin: 10px;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 515px;
+}
+.box-img {
+  width: 515px;
+  height: 515px;
+}
+.box-1 {
+}
+.box-container img {
+  width: 515px;
+  height: 415px;
+  object-fit: cover;
+}
+.text {
+  margin: -4px 0;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Syne", serif;
+  color: var(--navLink);
+  background-color: var(--about-bg);
+}
+.text h3,
+p {
+  padding: 0 1rem;
+}
+.text h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+.text p {
+  font-size: 1rem;
+  color: var(--navLink);
+}
+
