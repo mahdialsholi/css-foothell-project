@@ -2,6 +2,8 @@
   --green: #b8ec4c;
   --navLink: rgb(255, 255, 255, 0.48);
   --about-bg: #1a1a1a;
+  --star: #ebc500;
+  --box: #101010;
 }
 
 * {
@@ -238,4 +240,84 @@ p {
   background-color: var(--about-bg);
   padding: 10px;
   margin: 10px;
+}
+.testimonial * {
+  background-color: transparent;
+}
+.testimonial-arrow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.testimonial-contianer {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonial-quote {
+}
+.testimonial-quote p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+  word-spacing: 0.125rem;
+}
+
+.quote {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.quote svg path {
+  color: var(--green);
+}
+.testimonial-text {
+  font-family: "Syne", serif;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 380px;
+  background-color: var(--box);
+}
+
+.star svg path {
+  color: var(--star);
+}
+
+.box-avatar {
+  /* background-color: red; */
+  position: relative;
+  padding: 1rem;
+  border-top: 1px solid var(--about-bg);
+  width: 400px;
+}
+.box-avatar h3 {
+  font-size: 1rem;
+  color: white;
+  padding: 0.25rem 1rem;
+}
+.box-avatar p {
+  font-size: 1rem;
+  color: var(--navLink);
+  padding: 0.25rem 1rem;
+}
+.star {
+  padding: 0.5rem;
+}
+.box-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  right: 1rem;
+}
+.star svg {
+  padding: 1rem 0.25rem;
 }
