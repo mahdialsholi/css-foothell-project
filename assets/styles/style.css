@@ -186,6 +186,7 @@ span svg {
   align-items: center;
 }
 .my-works p {
+  font-family: "Syne", serif;
   color: var(--navLink);
 }
 
@@ -374,4 +375,94 @@ p {
   padding: 0.5rem 2rem;
   margin: 1rem 0;
   border: none;
+}
+
+/* My Blogs */
+.my-blogs {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--about-bg);
+  height: 704px;
+}
+.my-blogs * {
+  background-color: transparent;
+}
+
+.my-blogs-box {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.my-blogs-container {
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+.my-blogs-img img {
+  height: 300px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.my-blogs-text {
+  font-family: "Syne", serif;
+  width: 100%;
+}
+
+.my-blogs-text h2 {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: white;
+}
+.my-blogs-text p {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: var(--navLink);
+}
+
+.footer {
+  background-color: black;
+  height: 400px;
+}
+.footer * {
+  background-color: transparent;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 35% repeat(3, 20%);
+  gap: 2rem;
+}
+
+.footer-container h1 {
+  font-family: "Syne", serif;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+.footer-info p {
+  color: var(--green);
+  font-size: 1rem;
+}
+.footer-links p:first-child {
+  font-size: 1rem;
+}
+
+.footer > p,
+.footer-links p {
+  font-family: "Syne", serif;
+  color: var(--navLink);
+  padding: 1rem;
+  line-height: 0.7;
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.footer > p {
+  width: 100%;
+  text-align: center;
 }
