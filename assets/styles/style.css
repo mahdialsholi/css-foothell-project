@@ -21,6 +21,7 @@
   margin: 0;
 }
 nav {
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100%;
@@ -55,8 +56,8 @@ ul {
   align-items: center;
 }
 li {
-  padding: 10px 20px;
-  margin: 0 10px;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0.75rem;
 }
 a {
   text-decoration: none;
@@ -163,7 +164,7 @@ span svg {
   top: 0.5rem;
   right: 0.5rem;
 }
-
+/* Works */
 .works {
   width: 100%;
   padding: 10px;
@@ -196,7 +197,6 @@ span svg {
   gap: 2rem;
   display: flex;
   justify-content: space-evenly;
-
   height: 515px;
 }
 .box-img {
@@ -235,6 +235,7 @@ p {
   color: var(--navLink);
 }
 
+/* testimonial */
 .testimonial {
   width: 100%;
   height: 600px;
@@ -242,6 +243,7 @@ p {
   padding: 10px;
   margin: 10px;
 }
+
 .testimonial * {
   background-color: transparent;
 }
@@ -255,8 +257,7 @@ p {
   color: var(--navLink);
 }
 
-.testimonial-contianer {
-  /* background-color: red;  */
+.testimonial-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -376,6 +377,7 @@ svg path {
 .contact-box button {
   background-color: rgb(255, 255, 255, 0.08);
   color: white;
+  cursor: pointer;
   padding: 0.5rem 2rem;
   margin: 1rem 0;
   border: none;
@@ -417,17 +419,19 @@ svg path {
 }
 
 .my-blogs-text h2 {
+  font-family: "Syne", serif;
   padding: 0.5rem;
   margin: 0.5rem;
   color: white;
 }
 .my-blogs-text p {
+  font-family: "Syne", serif;
   padding: 0.5rem;
   margin: 0.5rem;
   font-size: 1rem;
   color: var(--navLink);
 }
-
+/* footer */
 .footer {
   background-color: black;
   height: 400px;
@@ -436,21 +440,38 @@ svg path {
   background-color: transparent;
 }
 .footer-container {
-  display: grid;
-  grid-template-columns: 35% repeat(3, 20%);
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  padding: 1rem;
+  margin: 1rem;
+  flex-grow: 10;
+}
+.footer-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .footer-container h1 {
   font-family: "Syne", serif;
   font-size: 4rem;
   color: white;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 .footer-info p {
+  font-family: "Syne", serif;
   color: var(--green);
   font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 .footer-links p:first-child {
   font-size: 1rem;
@@ -479,7 +500,7 @@ svg path {
     padding: 10px;
     margin: 10px;
   }
-  
+
   /* Home Page */
   .home {
     padding: 10px;
@@ -490,7 +511,9 @@ svg path {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0.5rem 0;
+    margin: 0.25rem auto;
+    width: 100%;
   }
   nav {
     display: none;
@@ -525,6 +548,162 @@ svg path {
   /* About Page */
   .about {
     height: 300px;
-    padding: 10px;
+  }
+  .about-container {
+    height: 210px;
+    overflow: hidden;
+    margin: 0.5rem;
+  }
+
+  .about-content {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  /* Works  media query  */
+
+  .works {
+    padding: 0.125rem;
+    margin: 0.125rem 0;
+  }
+
+  .works .box-container:nth-child(3) {
+    margin-inline-start: 0rem;
+  }
+
+  .box-container {
+    flex-direction: column;
+    height: max-content;
+  }
+  .box-img {
+    width: 100%;
+    height: fit-content;
+  }
+  .box-1 {
+  }
+  .box-container img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .text {
+    width: 100%;
+    height: max-content;
+    padding: 1rem 0;
+    margin: -4px auto;
+  }
+
+  /* testimonial media query */
+
+  .testimonial {
+    padding: 0.25rem 0;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem auto;
+    padding: 0.75rem;
+  }
+  .testimonial-text {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  /* contact media query */
+
+  .contact {
+    height: 750px;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    background-image: url("../images/person.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .contact-img {
+    display: none;
+  }
+  .contact-img img {
+    display: none;
+  }
+  .contact-box {
+    position: absolute;
+    bottom: 0;
+    font-family: "Syne", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-box h3 {
+    font-family: "Syne", serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+  }
+
+  .contact-box h3:nth-child(1) {
+    color: white;
+  }
+  .contact-box h3:nth-child(2) {
+    font-family: "Syne", serif;
+    color: var(--navLink);
+  }
+  .contact-box button {
+    padding: 0.5rem 2rem;
+    border-radius: 0.125rem;
+  }
+
+  /* My blog media query  */
+  .my-blogs {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+  }
+  .my-blogs-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .my-blogs-container {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+  }
+  .my-blogs-img img {
+    height: 300px;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /*   Footer media query*/
+  .footer {
+    height: fit-content;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .footer-container h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+  }
+  .footer-links-container {
+    display: flex;
+    gap: 0.5rem;
   }
 }
